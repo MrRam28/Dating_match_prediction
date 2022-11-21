@@ -1,5 +1,5 @@
 # Dating_match_prediction
-(Dating_match_prediction):[https://dating-match-app.herokuapp.com]
+(Dating_match_prediction):[]
 
 conda create -p venv python==3.9 -y
 
