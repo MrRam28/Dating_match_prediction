@@ -15,31 +15,31 @@
 <body>
  <div class="login">
     <marquee direction="right"  bgcolor="red" >
-	<h1 style="text-align:center">Employee Attrition Prediction</h1>
+	<h1 style="text-align:center">Dating Match Prediction</h1>
     </marquee>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="Decision of partner at night of event" placeholder="dec_o " required="required" /><br>
-      <input type="text" name="Decision at night of event" placeholder="dec" required="required" /><br>
-      <input type="text" name="How likely do you think it is that your partner likes you" placeholder="like_o" required="required" /><br>
-        <input type="text" name="Did you like your partner" placeholder="like" required="required" /><br>
-        <input type="text" name="Rating by partner (about me) at night of event on being funny" placeholder="fun_o" required="required" /><br>
-        <input type="text" name="Rate yourself - being funny" placeholder="fun" required="required" /><br>
-        <input type="text" name="What do you look for in a partner - shared interests" placeholder="shar" required="required" /><br>
-        <input type="text" name=" Rating by partner (about me) at night of event on shared interest" placeholder="shar_o" required="required" /><br>
-        <input type="text" name="Rate your partner - attractiveness" placeholder="attr_o" required="required" /><br>
-        <input type="text" name="Rate yourself - attractiveness" placeholder="attr" required="required" /><br>
-        <input type="text" name=" How happy do you expect to be with the people you meet during the speed-dating event" placeholder="prob_o" required="required" /><br>
-        <input type="text" name="how many do you expect will be interested in dating you" placeholder="prob" required="required" /><br>
-        <input type="text" name="them_cal" placeholder="them_cal" required="required" /><br>
-        <input type="text" name="Rate yourself - intelligence" placeholder="intel" required="required" /><br>
-        <input type="text" name=" Rate your partner - intelligence" placeholder="intel_o" required="required" /><br>
-        <input type="text" name=" Rate yourself - sincerity" placeholder="sinc" required="required" /><br>
-        <input type="text" name="Rate your partner - sincerity" placeholder="sinc_o" required="required" /><br>
-        <input type="text" name="What do you look for in a partner - ambition" placeholder="amb" required="required" /><br>
-        <input type="text" name=" How many matches do you expect to get" placeholder="num_in_3" required="required" /><br>
-        <input type="text" name="income" placeholder="income" required="required" /><br>
+        <input type="text" size="75" placeholder="Decision of partner at night of event (yes=1, No=0)" name="dec_o " required="required" /><br>
+        <input type="text" size="75" placeholder="Decision at night of event (yes=1, No=0)" name="dec" required="required" /><br>
+        <input type="text" size="75" placeholder="How likely do you think it is that your partner likes you (rating 0-10)" name="like_o" required="required" /><br>
+        <input type="text" size="75" placeholder="Did you like your partner (rating 0-10)" name="like" required="required" /><br>
+        <input type="text" size="75" placeholder="Rating by partner (about me) at night of event on being funny (rating 0-10)" name="fun_o" required="required" /><br>
+        <input type="text" size="75" placeholder="Rate yourself - being funny (rating 0-10)" name="fun" required="required" /><br>
+        <input type="text" size="75" placeholder="What do you look for in a partner - shared interests (rating 0-10)" name="shar" required="required" /><br>
+        <input type="text" size="75" placeholder="Rating by partner (about me) at night of event on shared interest (rating 0-10)" name="shar_o" required="required" /><br>
+        <input type="text" size="75" placeholder="Rate your partner - attractiveness (rating 0-10)" name="attr_o" required="required" /><br>
+        <input type="text" size="75" placeholder="Rate yourself - attractiveness (rating 0-10)" name="attr" required="required" /><br>
+        <input type="text" size="75" placeholder="How happy do you expect to be with the people you meet during the speed-dating event (rating 0-10)" name="prob_o" required="required" /><br>
+        <input type="text" size="75" placeholder="How many do you expect will be interested in dating you (rating 0-10)" name="prob" required="required" /><br>
+        <input type="text" size="75" placeholder="How many call you resived (call 0-10) " name="them_cal" required="required" /><br>
+        <input type="text" size="75" placeholder="Rate yourself - intelligence (rating 0-10)" name="intel" required="required" /><br>
+        <input type="text" size="75" placeholder="Rate your partner - intelligence (rating 0-10)" name="intel_o" required="required" /><br>
+        <input type="text" size="75" placeholder="Rate yourself - sincerity (rating 0-10)" name="sinc" required="required" /><br>
+        <input type="text" size="75" placeholder="Rate your partner - sincerity (rating 0-10)" name="sinc_o" required="required" /><br>
+        <input type="text" size="75" placeholder="What do you look for in a partner - ambition (rating 0-10)" name="amb" required="required" /><br>
+        <input type="text" size="75" placeholder="How many matches do you expect to get " pname="num_in_3" required="required" /><br>
+        <input type="text" size="75" name="income" placeholder="income" required="required" /><br>
         
 
 

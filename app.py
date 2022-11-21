@@ -31,7 +31,7 @@ def predict():
     output = model.predict(final_features)[0]
     print(output)
     # output = round(prediction[0], 2)
-    return render_template('home.html', prediction_text="Dating_match(yes=1, No=0)  {}".format(output))
+    return render_template('home.html', prediction_text="Profile match (yes=1, No=0)  {}".format(output))
 
 
 if __name__ == "__main__":
