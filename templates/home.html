@@ -21,7 +21,7 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
         <input type="text" size="75" placeholder="Decision of partner at night of event (yes=1, No=0)" name="dec_o " required="required" /><br>
-        <input type="text" size="75" placeholder="Decision at night of event (yes=1, No=0)" name="dec" required="required" /><br>
+        <input type="text" size="75" placeholder="Decision at night of event (yourself) (yes=1, No=0)" name="dec" required="required" /><br>
         <input type="text" size="75" placeholder="How likely do you think it is that your partner likes you (rating 0-10)" name="like_o" required="required" /><br>
         <input type="text" size="75" placeholder="Did you like your partner (rating 0-10)" name="like" required="required" /><br>
         <input type="text" size="75" placeholder="Rating by partner (about me) at night of event on being funny (rating 0-10)" name="fun_o" required="required" /><br>
@@ -37,7 +37,8 @@
         <input type="text" size="75" placeholder="Rate your partner - intelligence (rating 0-10)" name="intel_o" required="required" /><br>
         <input type="text" size="75" placeholder="Rate yourself - sincerity (rating 0-10)" name="sinc" required="required" /><br>
         <input type="text" size="75" placeholder="Rate your partner - sincerity (rating 0-10)" name="sinc_o" required="required" /><br>
-        <input type="text" size="75" placeholder="What do you look for in a partner - ambition (rating 0-10)" name="amb" required="required" /><br>
+        <input type="text" size="75" placeholder="What do you look for in a partner - ambition (rating 0-10)" name="amb_o" required="required" /><br>
+        <input type="text" size="75" placeholder="Your - ambition (rating 0-10)" name="amb" required="required" /><br>
         <input type="text" size="75" placeholder="How many matches do you expect to get " pname="num_in_3" required="required" /><br>
         <input type="text" size="75" name="income" placeholder="income" required="required" /><br>
         
